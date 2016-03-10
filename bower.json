@@ -1,0 +1,18 @@
+{
+  "name": "TTPlaner",
+  "description": "Amrita Timetable app",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mui": "^0.4.7"
+  }
+}

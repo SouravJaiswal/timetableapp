@@ -1,0 +1,365 @@
+/**
+ * Body CSS
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+  font-family: 'Lato';
+}
+
+html,
+body,
+input,
+textarea,
+buttons {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+/**
+ * Layout CSS
+ */
+
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: left 0.2s;
+}
+
+#sidedrawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  left: -200px;
+  overflow: auto;
+  z-index: 2;
+  background-color: #282830;
+  transition: transform 0.2s;
+  color: white;
+}
+
+#content-wrapper {
+  min-height: 100%;
+  overflow-x: hidden;
+  margin-left: 0px;
+  transition: margin-left 0.2s;
+  
+  /* sticky bottom */
+  margin-bottom: -160px;
+  padding-bottom: 160px;
+}
+
+#footer {
+  height: 160px;
+  margin-left: 0px;
+  transition: margin-left 0.2s;
+}
+
+@media (min-width: 768px) {
+  #header {
+    left: 200px;
+  }
+  
+  #sidedrawer {
+    transform: translate(200px);
+  }
+  
+  #content-wrapper {
+    margin-left: 200px;
+  }
+  
+  #footer {
+    margin-left: 200px;
+  }
+  
+  body.hide-sidedrawer #header {
+    left: 0;
+  }
+  
+  body.hide-sidedrawer #sidedrawer {
+    transform: translate(0px);
+  }
+  
+  body.hide-sidedrawer #content-wrapper {
+    margin-left: 0;
+  }
+  
+  body.hide-sidedrawer #footer {
+    margin-left: 0;
+  }
+}
+
+
+/**
+ * Toggle Sidedrawer
+ */
+#sidedrawer.active {
+  transform: translate(200px);
+}
+
+
+/**
+ * Header CSS
+ */
+
+.sidedrawer-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.sidedrawer-toggle:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/**
+ * Sidedrawer CSS
+ */
+
+#sidedrawer-brand {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+#sidedrawer ul {
+  list-style: none;
+}
+
+#sidedrawer > ul {
+  padding-left: 0px;
+  text-align: center;
+}
+
+#sidedrawer > ul > li:first-child {
+  padding-top: 15px;
+}
+
+#sidedrawer strong {
+  display: block;
+  padding: 15px 22px;
+  cursor: pointer;
+}
+
+#sidedrawer strong:hover {
+  background-color: #60646D;
+}
+
+#sidedrawer strong + ul > li {
+  padding: 6px 0px;
+
+}
+
+#sidedrawer ul li{
+  padding-bottom: 15px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+#sidedrawer ul li strong a{
+  color: #fff;
+  text-decoration: none;
+}
+#sidedrawer ul li strong a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/*
+
+  Container
+
+*/
+
+#login{
+  width: 600px;
+  margin: auto;
+  margin-top: 200px;  
+  color: white; 
+}
+
+.mui-panel{
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 70px;
+}
+
+
+/*
+  Department
+*/
+
+#department tr td{
+  border: 1px solid black;
+}
+
+#deps{
+  padding-bottom: 50px;
+  width: 630px;
+  margin: auto;
+}
+h1{
+  margin-bottom: 30px;
+}
+#deps img{
+  border-radius: 150px;
+  display: inline-block;
+  margin: 2px;
+}
+
+
+/*
+  Years
+*/
+
+#years figure{
+  display: inline-block !important;
+
+}
+
+
+#years figure figcaption{
+  margin-top: 5px;  
+}
+
+#years img{
+  margin: 6px;
+}
+
+/*
+
+Sections
+
+*/
+
+#sections figure{
+  display: inline-block !important;
+}
+
+#sections figure figcaption{
+  margin-top: 5px;  
+}
+
+#sections img{
+  margin: 6px;
+}
+
+/*
+  
+  Timetable
+
+*/
+
+.mui-table thead th{
+  text-align: center;
+}
+
+.mui-table tr{
+  border-bottom: 1px solid gray;
+  height: 15px;
+}
+
+.lunch,.interval{
+  background: #eee;
+  border-bottom: 1px solid black;
+}
+
+
+.mui-table>tbody>tr>td, .mui-table>tbody>tr>th, .mui-table>tfoot>tr>td, .mui-table>tfoot>tr>th, .mui-table>thead>tr>td, .mui-table>thead>tr>th{
+  padding: 20px;
+  min-width: 30px;
+}
+
+.interval{
+  max-width: 10px;  
+}
+
+.widetable{
+    overflow-x: auto;
+}
+
+.widetable::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.widetable::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+
+th, td {
+    overflow: auto;
+    width: 100px;
+    text-align: center;
+}
+
+@-webkit-keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(.01);
+            transform: scale(.01);
+  }
+
+  100% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }    
+}
+
+@keyframes ripple-animation {
+  0% {
+    -webkit-transform: scale(.01);
+            transform: scale(.01);
+  }
+
+  100% {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+  }     
+}
+
+
+/*
+  
+  App bar
+
+*/
+
+.mui-appbar{
+  background: #282830;
+}
+
+/**
+ * Footer CSS
+ */
+
+#footer {
+  background-color: #47C9AF;
+  color: #fff;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+

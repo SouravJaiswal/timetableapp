@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="bower_components/mui/packages/cdn/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <script src="bower_components/mui/packages/cdn/js/mui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/simple-ripple-effect.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="sidedrawer" class="mui--no-user-select">
+      <div id="sidedrawer-brand" class="mui--appbar-line-height mui--text-title"><img src="https://placehold.it/150x150"></div>
+      <ul>
+        <li>
+          <strong><a href="index.html">Home</a></strong>
+        </li>
+        <li>
+          <strong><a href="login.html">Login</a></strong>
+        </li>
+        <li>
+          <strong><a href="about.html">About Us</a></strong>
+        </li>
+        <li>
+          <strong><a href="contact.html">Contact Us</a></strong>
+        </li>
+      </ul>
+    </div>
+    <header id="header">
+      <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+          <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+          <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+          <span class="mui--text-title mui--hidden-xs-inline-block mui--hidden-sm-inline-block">myWorkspace</span>
+          <span class="mui--text-title mui--visible-xs-inline-block mui--visible-sm-inline-block">myWorkspace</span>
+        </div>
+      </div>
+    </header>
+    <div id="content-wrapper">
+      <div class="mui--appbar-height"></div>
+      <div class="mui-container-fluid">
+      <div class="mui-panel">
+        <h1 class="mui--text-center">Timetable</h1>
+        <div class="widetable">
+        <table class="mui-table">
+          <thead>
+            <th>Day</th>
+            <th class="box ripple-effect">1</th>
+            <th>2</th>
+            <th >Interval</th>
+            <th>3</th>
+            <th>4</th>
+            <th >Lunch</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td class="box ripple-effect">English</td>
+              <td class="box ripple-effect">C programming</td>
+              <td class="interval"></td>
+              <td class="box ripple-effect">Software Engineering</td>
+              <td class="box ripple-effect">Operating System</td>
+              <td class="lunch"></td>
+              <td class="box ripple-effect" colspan="2">OS Lab</td>
+              <td class="box ripple-effect"></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td class="box ripple-effect">English</td>
+              <td class="box ripple-effect">C programming</td>
+              <td class="interval"></td>
+              <td class="box ripple-effect">Software Engineering</td>
+              <td class="box ripple-effect">Operating System</td>
+              <td class="lunch"></td>
+              <td  class="box ripple-effect" colspan="2">OS Lab</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td  class="box ripple-effect">English</td>
+              <td  class="box ripple-effect">C programming</td>
+              <td class="interval"></td>
+              <td class="box ripple-effect">Software Engineering</td>
+              <td  class="box ripple-effect">Operating System</td>
+              <td class="lunch"></td>
+              <td class="box ripple-effect" colspan="2">OS Lab</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td class="box ripple-effect">English</td>
+              <td class="box ripple-effect">C programming</td>
+              <td class="interval"></td>
+              <td class="box ripple-effect">Software Engineering</td>
+              <td class="box ripple-effect">Operating System</td>
+              <td class="lunch"></td>
+              <td class="box ripple-effect" colspan="2">OS Lab</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td >Friday</td>
+              <td class="box ripple-effect">English</td>
+              <td class="box ripple-effect">C programming</td>
+              <td class="interval"></td>
+              <td class="box ripple-effect">Software Engineering</td>
+              <td class="box ripple-effect">Operating System</td>
+              <td class="lunch"></td>
+              <td class="box ripple-effect" colspan="2">OS Lab</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <h2 class="mui--text-center">Config</h2>
+        <hr>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
